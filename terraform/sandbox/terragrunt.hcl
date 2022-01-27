@@ -19,7 +19,6 @@ repository_names = ["ssp", "another-ecr"]
 read_principals = ${local.read_principals}
 EOF
 }
-// testing
 
 generate "remote_state" {
   path      = "backend.tf"
