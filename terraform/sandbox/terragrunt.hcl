@@ -2,10 +2,12 @@ terraform {
   source = "git::https://github.com/BCDevOps/terraform-octk-aws-workload-ecr.git//.?ref=v0.0.2"
 }
 
+
+
 locals {
   tfc_hostname     = "app.terraform.io"
   tfc_organization = "bcgov"
-  project          = "tgfk4s"
+  project          = "fdvdec"
   environment      = reverse(split("/", get_terragrunt_dir()))[0]
   read_principals  = get_env("AWS_ACCOUNTS_ECR_READ_ACCESS", "")
 }
